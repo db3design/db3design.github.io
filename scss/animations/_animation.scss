@@ -1,0 +1,40 @@
+// project link pulse
+@keyframes shadow-pulse
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes shadow-pulse-big
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    box-shadow: 0 0 0 70px rgba(0, 0, 0, 0);
+  }
+}
+
+// adds pulse to project link
+.project-link
+{
+  a {
+      
+        float: left;
+        margin: 40px;
+        width: 130px;
+        height: 130px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #fff;
+        text-align: center;
+        background: rgba(30, 144, 255, 0.6);
+        border-radius: 50%;
+        animation: shadow-pulse 1.4s infinite;
+      
+  }
+}
