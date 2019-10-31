@@ -75,7 +75,6 @@
 
 .textLink {
   line-height: 1;
-  max-width: 16.75%;
   color: #2E2E40;
   font-weight: 500;
   text-transform: uppercase;
@@ -456,6 +455,9 @@
 
 .project {
   background-color: #3084F2;
+  min-height: 100vh;
+  padding-top: 0;
+  margin-top: auto;
 }
 
 @media screen and (min-width: 320px) {
@@ -467,7 +469,7 @@
 
 @media screen and (min-width: 768px) {
   .project {
-    margin-left: 5%;
+    margin-left: 0;
     padding: 12.5vh 10%;
   }
 }
@@ -476,6 +478,7 @@
   margin-bottom: 25vh;
   border-top: 1.5px solid rgba(255, 255, 255, 0.75);
   padding-top: 25px;
+  margin-top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -497,6 +500,17 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-bottom: 20vh;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .project .head {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 45vh;
   }
 }
 
@@ -674,7 +688,7 @@
 #workTop {
   background-image: url(../../imgs/designBG.svg);
   background-size: 50%;
-  background-position: center center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   background-attachment: fixed;
@@ -688,8 +702,8 @@
 
 #workSecond {
   background-image: url(../../imgs/designBG1.svg);
-  background-size: 100%;
-  background-position: center center;
+  background-size: 50%;
+  background-position: top center;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   background-attachment: fixed;
@@ -698,13 +712,13 @@
 }
 
 #workSecond:hover {
-  background-size: 105%;
+  background-size: 55%;
 }
 
 #workLast {
   background-image: url(../../imgs/designBG2.svg);
   background-size: 50%;
-  background-position: center center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   background-attachment: fixed;

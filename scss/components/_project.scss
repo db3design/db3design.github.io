@@ -1,12 +1,15 @@
 .project {
     background-color: $blue;
+    min-height: 100vh;
+    padding-top: 0;
+    margin-top: auto;
 
     @media screen and (min-width: $small) {
         margin-left: 0;
         padding-bottom: 6.75vh;
     }
     @media screen and (min-width: $medium) {
-        margin-left: 5%;
+        margin-left: 0;
         padding: 12.5vh 10%;
     }
 
@@ -14,6 +17,7 @@
         margin-bottom: 25vh;
         border-top: 1.5px solid rgba($color: #fff, $alpha: .75);
         padding-top: 25px;
+        margin-top: 0;
         display: flex;
 
         @media screen and (min-width: $small) {
@@ -22,6 +26,11 @@
         }
         @media screen and (min-width: $medium) {
             flex-direction: row;
+            margin-bottom: 20vh;
+        }
+        @media screen and (min-width: $large) {
+            flex-direction: row;
+            margin-bottom: 45vh;
         }
 
 
@@ -138,7 +147,7 @@
 #workTop {
     background-image: url(../../imgs/designBG.svg);
     background-size: 50%;
-    background-position: center center;
+    background-position: top center;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     background-attachment: fixed;
@@ -151,22 +160,22 @@
 
 #workSecond {
     background-image: url(../../imgs/designBG1.svg);
-    background-size: 100%;
-    background-position: center center;
+    background-size: 50%;
+    background-position: top center;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     background-attachment: fixed;
     transition: all .5s .25s;
 
     &:hover {
-        background-size: 105%;
+        background-size: 55%;
     }
 }
 
 #workLast {
     background-image: url(../../imgs/designBG2.svg);
     background-size: 50%;
-    background-position: center center;
+    background-position: top center;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     background-attachment: fixed;
