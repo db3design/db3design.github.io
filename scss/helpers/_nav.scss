@@ -1,0 +1,108 @@
+#siteLogo {
+    @media screen and (min-width: $small) {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    }
+    @media screen and (min-width: $medium) {
+        position: absolute;
+        top: 25px;
+        left: 75px;
+    }
+    @media screen and (min-width: $large) {
+        position: absolute;
+        top: 25px;
+        left: 75px;
+    }
+}
+
+#siteNav {
+    @media screen and (min-width: $small) {
+        display: none;
+    }
+    @media screen and (min-width: $medium) {
+        position: absolute;
+        top: 25px;
+        right: 75px;
+        height: 75px;
+        display: flex;
+        align-items: center;
+
+        a {
+            color: white;
+            margin-right: 25px;
+            text-decoration: none;
+        }
+    }
+}
+#mobileNav {
+    height: 75px;
+    width: 75px;;
+    position: absolute;
+    top: 25px;
+    right: 50px;
+
+    display: flex;
+    align-items: center;
+
+    i {
+        font-size: 1.5rem;
+        color: white;
+        margin-left: auto;
+    }
+
+
+    @media screen and (min-width: $medium) {
+        display: none;
+    }
+}
+
+#overlay {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    z-index: -1;
+
+    transition: all 1s .15s;
+
+    @include centerContent;
+
+    #closeButton {
+        height: 75px;
+        width: 75px;;
+        position: absolute;
+        top: 25px;
+        right: 50px;
+
+        display: flex;
+        align-items: center;
+
+        i {
+            font-size: 1.5rem;
+            color: #4D05E8;
+            margin-left: auto;
+        }
+    }
+
+    #mobileNavLinks {
+        @include centerContent;
+
+
+        a {
+            margin-bottom: 15px;
+            font-size: 2rem;
+            font-weight: 900;
+            color: #4D05E8;
+            letter-spacing: -.025rem;
+            word-spacing: -.25px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+}

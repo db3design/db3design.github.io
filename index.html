@@ -1,227 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hello, my name is David Bowers, but you can call me Trey | I am a Front-End website Designer, Developer and marketer.</title>
-    <link rel="shortcut icon" href="imgs/icon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Personal Home Page</title>
 
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/40b325c8c1.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css" type="text/css">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,300i,400,400i,500,600,700,800,900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/40b325c8c1.js" crossorigin="anonymous"></script>
 
-    <!-- Ui Kit Css -->
-    <link rel="stylesheet" href="UIKit/css/uikit.min.css" />
-
-    <!-- on scroll animations -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
-
-    <!-- Custom Css -->
-    <link rel="stylesheet" href="scss/styles.css" type="text/css">
+  <link rel="stylesheet" href="scss/styles.css" type="text/css">
 </head>
 <body>
 
-  <!-- Sidebar Nav -->
-  <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-overlay" id="menuButton" data-aos="fade-left"><i class="fas fa-bars"></i></button>
+  <div id="overlay">
+    <div id="closeButton">
+        <i class="fas fa-times"></i>
+    </div>
 
-  <!-- Sidebar Content -->
-  <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
-      <div class="uk-offcanvas-bar">
-  
-          <button class="uk-offcanvas-close" type="button" uk-close></button>
-  
-          <a href="index.html">
-            <img src="imgs/icon.png"  alt="db" class="brandIcon">
-          </a>  
-          
-          <ul class="navLinks">
-            <li><a href="#" class="active" id="aboutLink">About</a></li>
-            <li><a href="#" id="servicesLink">Services</a></li>
-            <li><a href="contact.html" id="contactLink">Contact</a></li>
-          </ul>
-
-          <div class="aboutContent">
-
-            <h3 class="title"> Disciplined <br> Inquisitive <br>  Curious</h3>
-
-            <p class="lead1">I have spent the better part of five years learning, growing, and refining my extensive range of technical skills. With a wide range of experience and expertise, I can add value to almost any web project.</p>
-
-            <p class="lead2">Whether it is designing a site from scratch, fixing JavaScript bugs, or optimizing pages for search. I am sure that I have the skills to take your project or team to the next level.</p>
-
-            <a href="resume.pdf" target="new" class="textLink">View Resume</a>
-
-          </div>
-
-          <div class="servicesContent">
-
-            <h3 class="title">I have a wide range of expertise and experience</h3>
-
-            <div class="row">
-                <h5>My Expertise</h5>
-
-              <div class="col">
-                  <ul>
-                      <li><a href="webdesign.html">Web Design</a></li>
-                      <li><a href="webdevelopment.html">Web Development</a></li>
-                      <li><a href="webdesign.html">UI Prototyping</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="onlinemarketing.html">Online Advertising</a></li>
-                        <li><a href="onlinemarketing.html">Search Optimization</a></li>
-                        <li><a href="onlinemarketing.html">Social Media</a></li>
-                      </ul>
-              </div>
-            </div>
-
-            <div class="row">
-                <h5>My Experience</h5>
-
-              <div class="col">
-                  <ul>
-                      <li><a href="http://www.southernappalachianoutdoors.com/">Southern Appalachian Outdoors</a></li>
-                      <li><a href="http://www.laruefinechocolate.com/">Larue Fine Chocolate</a></li>
-                      <li><a href="http://www.paperstreetsignco.com/">Paper Street Sign Co.</a></li>
-                      <li><a href="http://mckissickcenter.com/">The Mckissick Center</a></li>
-                    </ul>
-              </div>
-            </div>
-
-            <a href="webdevelopment.html" class="textLink">View More Projects</a>
-
-          </div>
-      </div>
-  </div>
-
-  <!-- Hero Content -->
-  <div class="hero" data-aos="fade-up" id="hero">
-    <div class="hero-content" data-aos="fade-right">
-        <small class="intro">Hello, my name is David Bowers, but you can call me Trey.</small>
-
-        <h1 class="main-header">I am a Front-End website Designer, Developer and marketer.</h1>
-    
-        <a href="#" class="textLink" id="scroll-down">click here To see what i can do</a>
+    <div id="mobileNavLinks">
+      <a href="index.html">Home</a>
+      <a href="resume.pdf" target="new">Resume</a>
+      <a href="choose.html">Projects</a>
+      <a href="choose.html">Skills</a>
+      <a href="mailto: treybowers100@gmail.com">Contact</a>
     </div>
   </div>
 
+  <div id="fullpage">
+      <ul id="myMenu">
+          <li data-menuanchor="firstPage" class="active"><a href="#firstPage">
+          </a></li>
+          <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
+          <li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
+          <li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth section</a></li>
+        </ul>
 
-  <!-- work section  -->
-  <div class="project" id="workTop">
-      <div class="head">
-        <div class="title">
-          <h6 class="projectType">
-            I design business websites, company UIs, and web prototypes
-          </h6>
+    <div class="section">
+      <a href="index.html">
+          <img src="imgs/logo.svg" id="siteLogo">
+      </a>
+
+      <div id="siteNav">
+        <a href="#firstPage">Home</a>
+        <a href="#thirdPage">Resume</a>
+        <a href="choose.html">Projects</a>
+        <a href="choose.html">Skills</a>
+        <a href="#fourthPage">Contact</a>
+      </div>
+
+      <div id="mobileNav">
+          <i class="fas fa-bars"></i>
+      </div>
+
+        <div class="contentCenter">
+
+          <p class="intro"><em>Hello, my name is David Bowers, but you can call me Trey.</em></p>
+
+          <h1 class="main-header">I am a Front-End Designer/Developer</h1>
         </div>
-  
-        <div class="number">
-            <h6 class="projectType">
-              <a href="#" class="textLinkWhite" style="opacity: .75; color: white; font-size: 0.65em; text-transform: capitalize;" id="webDevScrollBtn">Click here to see more that I can do</a>
-            </h6>
-          </div>
-      </div>
-  
-      <div class="row">
-          <div class="project-content">
-              <h2 class="secondary-header">Website Design</h2>
-      
-              <p class="lead1">With more companies than ever online, your business needs to stand out from its competitors. With my simple, modern, and effective process for designing things for the web, I can help your business stand out online.</p>
-          </div>
-      
-          <div class="project-link">
-              <a href="webdesign.html" class="arrowLink">
-                  <i class="fas fa-angle-right"></i>
-                </a>
-          </div>
-      </div>
-  </div>
+        <a href="#secondPage" class="textLink bottom">
+          SCROLL DOWN TO SEE WHAT I CAN DO
+        </a>
+    </div>
+    <div class="section" id="slider">
+        <div class="slide" data-anchor="slide1">
+          <h2 class="secondary-header">Web Design</h2>
 
-  <div class="project" id="workSecond">
-    <div class="head">
-      <div class="title">
-        <h6 class="projectType">
-          I can build lots of cool things like apps, websites, and stores
-        </h6>
-      </div>
+          <p class="content-para">With more companies than ever online, your business needs to stand out from its competitors. With my simple, modern, and effective process for designing things for the web, I can help your business stand out online.</p>
 
-      <div class="number">
-          <h6 class="projectType">
-            <a href="#" class="textLinkWhite" style="opacity: .75; color: white; font-size: 0.65em; text-transform: capitalize;" id="socialScrollBtn">Click here to see more that I can do</a>
-          </h6>
+          <a href="webdesign.html" class="btn btn-primary">What Have I Done?</a>
+        </div>
+        <div class="slide" data-anchor="slide2"> 
+            <h2 class="secondary-header">Web Development</h2>
+
+            <p class="content-para">I have developed lots of websites throughout my career. With every project that I have worked on, there have been challenges and obstacles. However, I was able to use the power of the web to overcome all the obstacles in my path.</p>
+  
+            <a href="webdevelopment.html" class="btn btn-primary">What Have I Done?</a>
         </div>
     </div>
+    <div class="section">
+      <p class="content-para">Projects say a lot but here is what I look like..</p>
+      <h2 class="big-header">On Paper</h2>
 
-    <div class="row">
-        <div class="project-content">
-            <h2 class="secondary-header">Website Development</h2>
-    
-            <p class="lead1">I have developed lots of websites throughout my career. With every project that I have worked on, there have been challenges and obstacles. However, I was able to use the power of the web to overcome all the obstacles in my path.</p>
-        </div>
-    
-        <div class="project-link">
-            <a href="webdevelopment.html" class="arrowLink">
-                <i class="fas fa-angle-right"></i>
-              </a>
-        </div>
+      <a href="resume.pdf" target="new" class="btn btn-secondary">View My Resume</a>
+    </div>
+    <div class="section">
+      <h2 class="secondary-header">Connect With Me</h2>
+
+      <p class="content-para">There are lots of ways to get in touch with me:</p>
+
+      <div class="btn-group">
+        <a href="mailto:treybowers100@gmail.com" class="btn btn-primary smaller">Send Me an Email</a>
+        <a href="https://twitter.com/TreyBowers10" target="new" class="btn btn-primary smaller lighter">Follow Me On <i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/david-bowers-iii-b1563b197/" target="new" class="btn btn-primary smaller lighter">Connect With Me <i class="fab fa-linkedin-in"></i></a>
+      </div>
     </div>
   </div>
 
-  <div class="project" id="workLast">
-      <div class="head">
-        <div class="title">
-          <h6 class="projectType">
-            I use tools like Google Ad Words and Search Engine Optimization
-          </h6>
-        </div>
-  
-        <div class="number">
-            <h6 class="projectType">
-              <a href="onlinemarketing.html" class="textLinkWhite" style="opacity: .75; color: white; font-size: 0.65em; text-transform: capitalize;" >Click here to see more that I can do</a>
-            </h6>
-          </div>
-      </div>
-  
-      <div class="row">
-          <div class="project-content">
-              <h2 class="secondary-header">Online Marketing</h2>
-      
-              <p class="lead1">There are lots of ways to boost your exposure online, but it can be difficult to know what will work best for you. Throughout my career as an online marketer, I have figured out a system that can help any business generate leads consistently and sustainably.</p>
-          </div>
-      
-          <div class="project-link">
-              <a href="onlinemarketing.html" class="arrowLink">
-                  <i class="fas fa-angle-right"></i>
-                </a>
-          </div>
-      </div>
-  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
 
-
-
-    <!-- UIkit JS -->
-    <script src="UIKit/js/uikit.min.js"></script>
-    <script src="UIKit/js/uikit-icons.min.js"></script>
-
-    <!-- jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!-- Nav Navigation -->
-    <script src="js/navNavigation.js"></script>
-
-    <!-- scroll -->
-    <script src="js/scroll.js"></script>
-    <script src="js/webDevScrollBtn.js"></script>
-    <script src="js/socialScrollBtn.js"></script>
-
-    <!-- animations -->
-
-    <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 2000,
-      })
-    </script>
+  <script src="js/app.js"></script>
+  <script src="js/nav.js"></script>
 </body>
 </html>
