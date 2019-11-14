@@ -1,0 +1,298 @@
+section#intro {
+    background-image: url(../../imgs/hero.jpg);
+    background-size: auto 100%;
+    background-position: bottom center;
+    background-attachment: fixed;
+    background-color: $black-3;
+    background-blend-mode: multiply;
+    .hero {
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        padding: 0 7.5%;
+
+        .content {
+            padding-top: 5%;
+            display: flex;
+            flex-direction: column;
+
+            .content-1 {
+                color: $white-3;
+                max-width: 90%;
+                margin-right: auto;
+            }
+
+            .heading-1 {
+                color: $white-1;
+                margin-top: 2.5px;
+                margin-bottom: 10px;
+            }
+
+            .btn {
+                margin-right: auto;
+            }
+        }
+
+        #scrollDown {
+            color: $white-2;
+            position: absolute;
+            bottom: 3.5%;
+            left: 50%;
+
+            i {
+                font-size: 1.375rem;
+            }
+        }
+    }
+}
+
+section#bio {
+    padding: 0 10%;
+    padding-top: 15%;
+    padding-bottom: 2.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $white-2;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+
+        .col {
+            margin-bottom: 75px;
+
+            .skillsRow {
+                display: flex;
+                flex-direction: row;
+                margin-top: 15px;
+
+                .col {
+                    flex: 1 50%;
+
+                    ol {
+                        list-style-type: none;
+
+                        li {
+                            margin-bottom: 5px;
+
+                            &:first-of-type {
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+section#projectIntro {
+    background-color: $white-3;
+    padding: 15% 10%;
+
+    display: flex;
+
+    .content {
+        margin-top: auto;
+        margin-bottom: auto;
+        padding: 5%;
+
+        .heading-2 {
+            margin-bottom: 5px;
+        }
+
+        .content-1 {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+section#projects {
+    margin-top: 75px;
+    margin-bottom: 50px;
+    padding: 10%;
+    background-color: $white-2;
+    display: flex;
+
+    .content {
+        margin-top: auto;
+        margin-bottom: auto;
+
+        .row {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 12.5px;
+
+            .col {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 35px;
+
+                img {
+                    margin: auto;
+                }
+
+                .heading-4 {
+                    margin-top: 15px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                .btn-group {
+                    margin-top: 15px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    
+                    a {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+section#moreProjects {
+    padding: 15% 10%;
+
+    display: flex;
+
+    background-color: $white-3;
+
+    .content {
+        margin: auto;
+
+        p {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+section#review {
+    background-color: $black-1;
+    padding: 15% 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    display: flex;
+
+    .content {
+        margin: auto;
+
+        padding: 5% 0;
+
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            color: $white-2;
+            margin-top: 25px;
+        }
+
+        .slide {
+            padding: 7.5% 5%;
+            margin-bottom: 5%;
+            background-color: $white-1;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            &:first-of-type {
+                margin-top: 25px;
+            }
+
+            p {
+                flex: 1 50%;
+                margin-right: auto;
+                padding: 5%;
+            }
+            h4 {
+                flex: 1 50%;
+                margin-left: auto;
+                margin-bottom: auto;
+                text-align: right;
+                padding-right: 20px;
+            }
+        }
+    }
+}
+
+section#contact {
+    padding: 15% 10%;
+    background-color: $white-2;
+
+    display: flex;
+
+    .content {
+        margin: auto;
+
+        .col {
+            margin-bottom: 35px;
+        }
+
+        .img {
+            background: black;
+            height: 75px;
+            width: 75px;
+            border-radius: 50px;
+            margin-bottom: 15px;
+        }
+
+        .btn-group {
+            flex-direction: column;
+            padding: 5%;
+            padding-left: 0;
+
+            a {
+                margin: 0;
+                margin-bottom: 15px;
+                margin-right: auto;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $black-1;
+    padding: 15% 10%;
+
+    display: flex;
+
+    .content {
+        margin: auto;
+
+        .col {
+
+            margin-bottom: 25px;
+
+            h1 {
+                color: $white-1;
+            }
+
+            p {
+                color: $white-3;
+            }
+
+            &.links {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+
+                a {
+                    padding-right: 7.5px;
+                    font-size: .9rem;
+                    color: $white-2;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+}

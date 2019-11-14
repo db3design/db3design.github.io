@@ -1,0 +1,85 @@
+.btn-group {
+    display: inline-flex;
+
+    .btn {
+        margin-right: 35px;
+    }
+}
+
+.btn {
+    padding: 15px 45px;
+    border-radius: 7.5px;
+    background-color: black;
+    color: $white-2;
+
+    font-family: 'Muli' sans-serif;
+    font-weight: 800;
+    line-height: 1.25;
+    text-decoration: none;
+    text-align: center;
+
+    transition: all .65s .1s;
+
+    &.btn-green {
+        background-color: $green;
+        border: 2.5px solid $green;
+
+        &:hover {
+            background-color: rgba($color: $green, $alpha: .75);
+            border-color: transparent;
+            color: $white-1;
+        }
+
+        &.inverse {
+            background-color: transparent;
+            color: $green;
+
+            &:hover {
+                background-color: $green;
+                color: $white-1;
+            }
+        }
+    }
+
+    &.btn-blue {
+        background-color: $blue;
+        border: 2.5px solid $blue;
+
+        &:hover {
+            background-color: rgba($color: $blue, $alpha: .75);
+            border-color: transparent;
+            color: $white-1;
+        }
+
+        &.inverse {
+            background-color: transparent;
+            color: $blue;
+
+            &:hover {
+                background-color: $blue;
+                color: $white-1;
+            }
+        }
+    }
+
+    &.btn-black {
+        background-color: $black-1;
+        border: 2.5px solid $black-1;
+
+        &:hover {
+            background-color: $black-2;
+            border-color: transparent;
+            color: $white-1;
+        }
+
+        &.inverse {
+            background-color: transparent;
+            color: $black-1;
+
+            &:hover {
+                background-color: $black-1;
+                color: $white-1;
+            }
+        }
+    }
+}

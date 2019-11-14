@@ -1,0 +1,113 @@
+.heading-1 {
+    font-size: 2.5rem;
+    letter-spacing: -0.025em;
+    line-height: 1.25;
+    font-weight: 800;
+
+    @media screen and (min-width: $medium) {
+        font-size: 3.5rem;
+    }
+
+    @media screen and (min-width: $large) {
+        font-size: 4rem;
+    }
+
+    @media screen and (min-width: $extraLarge) {
+        font-size: 4.5rem;
+    }
+}
+
+.heading-2 {
+    font-size: 2.25rem;
+    letter-spacing: -0.0225em;
+    line-height: 1.25;
+    font-weight: 700;
+
+    @media screen and (min-width: $medium) {
+        font-size: 3.25rem;
+    }
+
+    @media screen and (min-width: $large) {
+        font-size: 3.75rem;
+    }
+    
+    @media screen and (min-width: $extraLarge) {
+        font-size: 4.25rem;
+    }
+}
+
+.heading-3 {
+    font-size: 2rem;
+    letter-spacing: -0.02em;
+    line-height: 1.25;
+    font-weight: 600;
+
+    @media screen and (min-width: $medium) {
+        font-size: 3rem;
+    }
+
+    @media screen and (min-width: $large) {
+        font-size: 3.5rem;
+    }
+    
+    @media screen and (min-width: $extraLarge) {
+        font-size: 4rem;
+    }
+}
+
+.heading-4 {
+    font-size: 1.65rem;
+    letter-spacing: -0.02em;
+    line-height: 1.25;
+    font-weight: 400;
+
+    @media screen and (min-width: $medium) {
+        font-size: 3rem;
+    }
+
+    @media screen and (min-width: $large) {
+        font-size: 3.5rem;
+    }
+    
+    @media screen and (min-width: $extraLarge) {
+        font-size: 4rem;
+    }
+}
+
+.content-1 {
+    font-size: 1rem;
+    letter-spacing: -0.01em;
+    line-height: 1.5;
+    font-weight: 400;
+
+    @media screen and (min-width: $medium) {
+        font-size: 1rem;
+    }
+
+    @media screen and (min-width: $large) {
+        font-size: 1.05rem;
+    }
+    
+    @media screen and (min-width: $extraLarge) {
+        font-size: 1.1rem;
+    }
+}
+
+.content-2 {
+    font-size: 1rem;
+    letter-spacing: -0.01em;
+    line-height: 1.5;
+    font-weight: 300;
+
+    @media screen and (min-width: $medium) {
+        font-size: 1rem;
+    }
+
+    @media screen and (min-width: $large) {
+        font-size: 1.05rem;
+    }
+    
+    @media screen and (min-width: $extraLarge) {
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+@import 'helpers/variables';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+
+@import 'brand/typography';
+@import 'brand/buttons';
+
+@import 'sections/nav';
+@import 'sections/customSections';
