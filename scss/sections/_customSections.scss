@@ -50,9 +50,8 @@ section#intro {
 }
 
 section#bio {
-    padding: 0 10%;
-    padding-top: 15%;
-    padding-bottom: 2.5%;
+    padding: 50px 10%;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -166,6 +165,7 @@ section#moreProjects {
 
     .content {
         margin: auto;
+        padding: 50px 0;
 
         p {
             margin-bottom: 30px;
@@ -176,7 +176,6 @@ section#moreProjects {
 section#review {
     background-color: $black-1;
     padding: 15% 10%;
-    margin-top: 50px;
     margin-bottom: 50px;
 
     display: flex;

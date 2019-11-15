@@ -59,6 +59,8 @@ aside {
     display: flex;
     align-items: center;
 
+    transition: all .65s .15s;
+
     .brand {
         flex: 1 33%;
         display: flex;
