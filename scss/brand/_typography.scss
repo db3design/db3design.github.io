@@ -9,11 +9,11 @@
     }
 
     @media screen and (min-width: $large) {
-        font-size: 4rem;
+        font-size: 5rem;
     }
 
     @media screen and (min-width: $extraLarge) {
-        font-size: 4.5rem;
+        font-size: 5.255rem;
     }
 }
 
@@ -105,6 +105,25 @@
 
     @media screen and (min-width: $large) {
         font-size: 1.05rem;
+    }
+    
+    @media screen and (min-width: $extraLarge) {
+        font-size: 1.1rem;
+    }
+}
+
+.content-3 {
+    font-size: .75rem;
+    letter-spacing: -0.01em;
+    line-height: 1.5;
+    font-weight: 300;
+
+    @media screen and (min-width: $medium) {
+        font-size: .85rem;
+    }
+
+    @media screen and (min-width: $large) {
+        font-size: .9rem;
     }
     
     @media screen and (min-width: $extraLarge) {

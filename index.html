@@ -28,7 +28,7 @@
         <header>
             <nav class="navbar">
                 <div class="brand">
-                    <h3 class="heading-1">db</h3>
+                    <h3 class="heading-1" id="brandIcon">db</h3>
                 </div>
 
                 <div class="links">
@@ -36,11 +36,10 @@
                     <i class="fas fa-bars" id="mobileNavIcon"></i>
 
                     <div class="navLinkContainer">
-                        <a href="#" class="navLink">Bio</a>
-                        <a href="#" class="navLink">About</a>
-                        <a href="#" class="navLink">Work</a>
-                        <a href="#" class="navLink">Reviews</a>
-                        <a href="#" class="navLink">Contact</a>
+                        <a href="#" class="navLink" id="bioLinkNav">Bio</a>
+                        <a href="Resume.pdf" target="new" class="navLink">Resume</a>
+                        <a href="#" class="navLink" id="projectsLinkNav">Projects</a>
+                        <a href="#" class="navLink" id="conactLinkNav">Contact</a>
                     </div>
                 </div>
             </nav>
@@ -52,9 +51,37 @@
                 <div class="content">
                     <p class="content-1">Hello, my name is David M. Bowers III, but you can call me Trey.</p>
 
-                    <h1 class="heading-1">I am a Website Designer & Developer</h1>
+                    <h1 class="heading-1">I Am A Website <br> <span>Designer &amp; Developer</span></h1>
 
-                    <a href="#" class="btn btn-green">My Projects</a>
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-blue" id="heroProjectsButton">My Projects</a>
+
+                        <a href="#" class="btn btn-blue inverse" id="heroBioButton">Read My Bio</a>
+                    </div>
+                </div>
+
+                <div class="aside" style="background-color: white;">
+                    <div class="content">
+                        <h4 class="heading-4">Let's Get Started</h4>
+                        <div class="method method-2">
+                            
+                            <p class="content-3">The Best Way to get started on a project is by contacting me directyly through email or phone! You can also connect with me on lots of differnet sites. See where I am at online below:</p>
+
+                            <div class="icon-group">
+                                <a href="mailto:treybowers100@gmail.com">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+
+                                <i class="fas fa-phone-square-alt" id="giveMeACall"></i>
+
+                                <i class="fab fa-twitter"></i>
+
+                                <i class="fab fa-github"></i>
+
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <a href="#" id="scrollDown">
@@ -62,145 +89,62 @@
                 </a>
             </div>
             </section>
-            
+
+            <section id="bioIntro">
+                <div class="content">
+                    <h2 class="heading-2">It's Nice To Meet You</h2>
+                    <p class="content-1">Here is a little bit about me.</p>
+                </div>
+            </section>
+
             <section id="bio">
                 <div class="content">
                     <div class="col">
-                        <h2 class="heading-2">Education</h2>
+                        <h3 class="heading-4">
+                            Education
+                        </h3>
 
-                        <p class="content-2">I have spent lots of time learning and mastering the fundamentals of the web. One of the most valuable lessons that I have learned thus far is that you will never stop learning in this career. My most recent educational achievement is a Techdegree in Front-End Website Development, from the great people at the Treehouse.</p>
-
+                        <p class="content-2">I have spent lots of time learning and mastering the fundamentals of the web. My most recent educational achievement is a Techdegree in Front-End Website Development, from the great people at the Treehouse.</p>
                     </div>
 
                     <div class="col">
-                        <h2 class="heading-2">Skills</h2>
+                        <h3 class="heading-4">Skills</h3>
 
-                        <p class="content-2">Over the course of my career, I have gained lots of skills that help me do what I do even better:</p>
+                        <ol>
+                            <li>Figma</li>
+                            <li>Visual Stuido Code</li>
+                            <li>HTML5, Sass, JavaScrip &amp; JQuery</li>
+                            <li>React &amp; Node Js</li>
+                            <li>Chrome, React, and Node DevTools</li>
+                            <li>Git, GitHub, and GitHub Pages</li>
+                        </ol>
+                    </div>
 
-                        <div class="skillsRow">
-                            <div class="col">
-                                <h4 class="heading-4">Designer</h4>
+                    <div class="col">
+                        <h3 class="heading-4">Experience</h3>
 
-                                <ol>
-                                    <li>Figma</li>
-                                    <li>UI &amp; UX Design</li>
-                                    <li>Prototyping</li>
-                                    <li>HTML &amp; Sass</li>
-                                </ol>
-                            </div>
-                            <div class="col">
-                                    <h4 class="heading-4">Developer</h4>
-                                    
-                                    <ol>
-                                        <li>JavaScript</li>
-                                        <li>JQuery</li>
-                                        <li>React.Js</li>
-                                        <li>Git/GitHub</li>
-                                    </ol>
-                                </div>
-                        </div>
-
-                        <a href="#" class="btn btn-blue inverse">View Resume</a>
+                        <ul>
+                            <li><span>2017 - 2019</span> DB3 Design | Founder, Owner, and Operator of freelance design agency</li>
+                            <li><span>2019</span> Certified Front-End Web Developer | Completed certification course, projects, and exams to become a certified developer</li>
+                        </ul>
                     </div>
                 </div>
             </section>
 
-            <section id="projectIntro">
+            <section id="resume">
                 <div class="content">
-                    <h2 class="heading-2">I Have Created Lots Of Things For The Web!</h2>
-                    <p class="content-1">When I combine my technical skills, interpersonal abilities, and product management expertise, I can create some pretty amazing websites!</p>
+                    <p class="content-1">
+                        I have spent ​the better part of  five years learning, growing, and  refining my extensive range of  technical skills. With a wide  range of experience and  expertise, I can add value to  almost any web project.  Whether it is ​designing a site  from scratch, fixing JavaScript  bugs, or optimizing pages for  search. I am sure that I have the  skills to take your project or  team to the next level. 
+                    </p>
 
-                    <a href="#" class="btn btn-green">My Projects</a>
+                    <a href="#" class="btn btn-blue inverse">View My Resume</a>
                 </div>
             </section>
 
             <section id="projects">
                 <div class="content">
-                    <h2 class="heading-2" style="text-align: center; margin-bottom: 25px;">My Projects</h2>
-                    <div class="row">
-                        <div class="col">
-                            <img src="imgs/larue.png" width="300px">
 
-                            <h4 class="heading-4">Larue Fine Chocolate</h4>
-
-                            <div class="btn-group">
-                                <a href="#" class="btn btn-blue">Project</a>
-
-                                <a href="#" class="btn btn-blue inverse">Code</a>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <img src="imgs/paperStreet.png" width="300px">
-
-                            <h4 class="heading-4">Paper Street Sign Co.</h4>
-
-                            <div class="btn-group">
-                                <a href="#" class="btn btn-blue">Project</a>
-
-                                <a href="#" class="btn btn-blue inverse">Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <img src="imgs/mckissickCenter.png" width="300px">
-
-                            <h4 class="heading-4">The McKissick Center</h4>
-
-                            <div class="btn-group">
-                                <a href="#" class="btn btn-blue">Project</a>
-
-                                <a href="#" class="btn btn-blue inverse">Code</a>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <img src="imgs/dashboard.png" width="300px">
-
-                            <h4 class="heading-4">YourApp&trade; Dashboard</h4>
-
-                            <div class="btn-group">
-                                <a href="#" class="btn btn-blue">Project</a>
-
-                                <a href="#" class="btn btn-blue inverse">Code</a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            </section>
-
-            <section id="moreProjects">
-                <div class="content">
-                    <h2 class="heading-2">View More Projects Here!</h2>
-
-                    <p class="content-1">I am always working on something. Whether it is a personal project or a freelance project. I am always working to better my skills.</p>
-
-                    <a href="#" class="btn btn-green">More Projects</a>
-                </div>
-            </section>
-
-            <section id="review">
-            <div class="content">
-                    <h2 class="heading-1">What Do People Say About Me?</h2>
-
-                <div class="slide slide-1">
-
-                        <h4 class="heading-4">- <br> Kim Valentin</h4>
-
-                        <p class="content-1">"Awesome communicator, took our ideas and ran."</p>
-                </div>
-
-                <div class="slide slide-2">
-                        <h4 class="heading-4">- <br> Jerimiah Moore</h4>
-
-                        <p class="content-1">"Finally have a site that works great and looks good!"</p>
-                </div>
-
-                <div class="slide slide-3">
-                        <h4 class="heading-4">- <br> Marty Fields</h4>
-
-                        <p class="content-1">"Was very easy to work with, highly recommend."</p>
-                </div>
-            </div>
             </section>
 
             <section id="contact">
